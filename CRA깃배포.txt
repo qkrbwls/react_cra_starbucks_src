@@ -38,5 +38,34 @@ cd build
 
 깃허브 홈페이지에서 새로고침 확인
 
+7. package.json 수정하기 
 
+    deploy
+        "scripts": {
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -b master -d build",
+        "start": "react-scripts start",
+        "build": "react-scripts build"
+    },
+    깃 리모트 주소
+        "homepage": "https://qkrbwls.github.io/starbucks_cra_react"
+
+    추가 됨 : https://create-react-app.dev/docs/deployment/ 사이트에서 도움
+
+
+8. 설치 gh-pages
+
+    npm install --save gh-pages
+
+9. deploy 실행하기 : 배포
+    npm run deploy
+    
+    published 뜨면 ok
+
+10. 깃허브 페이지스 배포
+settings
+pages
+source -> master -> save
+깃배포 주소 복사 브라우저 띄우기 (약 5분 후)
+https://qkrbwls.github.io/starbucks_cra_react/
 
