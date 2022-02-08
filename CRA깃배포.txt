@@ -1,0 +1,42 @@
+cd C:/Users/박유진/Desktop/박유진/학습산출물/2022년02월/02_08/02_08_1_리액트_CRA_깃허브_푸쉬_배포
+
+npm start
+ 
+혹시 오류 발생 시 
+
+npm install 실행 후 npm start
+
+빌드 하기
+npm run build
+
+확인 ls -la
+
+빌드 폴더로 이동 하기
+cd build
+
+---------깃허브에 배포
+
+1. 깃설정
+    git init
+
+2. 깃 환경설정
+    git config user.name "qkrbwls"
+    git config user.email "youjin_1202@naver.com"
+
+3. 깃 리모트(원격) 추가 주소 연결
+    git remote add origin https://github.com/qkrbwls/starbucks_cra_react.git
+
+4. 깃 스테이징 하기 
+    git add .
+
+5. 깃 커밋하기 
+    git commit -m "스타벅스 create-react-app 리액트 웹제작"
+
+6. 깃 푸쉬하기
+    git push origin master
+
+
+깃허브 홈페이지에서 새로고침 확인
+
+
+
