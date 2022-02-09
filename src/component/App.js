@@ -6,7 +6,7 @@ import QuickMenuComponent from "./QuickMenuComponent";
 import GoTopComponent from "./GoTopComponent"
 import ValidaterComponent from "./ValidaterComponent";
 
-function App({}) {
+function App() {
   return(
     <React.Fragment>
         <SkipComponent/>
