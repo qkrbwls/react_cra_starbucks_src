@@ -453,7 +453,7 @@
                   // left박스의 너비 = 창너비*(이미지너비 비율) 0.38125
                   // left박스의 높이 = left박스의 너비*높이 비율 0.85246
 
-                  winW = $(window).innerWidth();          
+                  let winW = $(window).innerWidth();          
                   if( winW <= 960 ){    // 창너비가 
                     leftW = winW * 0.38125;                 
                     leftH = leftW * 0.85246; //높이 = 너비*비율(85.246%)
@@ -484,6 +484,11 @@
                 else{
                     $('.go-top').stop().fadeOut(1000);
                 }
+            });
+            $('.go-top-btn').on({
+              click:function(){
+                $('html, body').stop().animate({scrollTop:0},600); //top:0 맨위로 이동해라 스무스 스크롤 
+              }
             });
 
           },
